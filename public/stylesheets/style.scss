@@ -117,14 +117,23 @@ nav {
         
         margin: 2em 0;
         
+
+        
          a {
+          color: #3E5272;
           width: 100%;
           transition: all .3s ease-in-out;
+
+          
 
           &:hover {
             opacity: .8;
             
           }
+         }
+
+         .signup-button {
+           color: #fff;
          }
       }
     }
@@ -169,6 +178,7 @@ nav {
     .signup-button {
       width: auto;
       margin: auto;
+      
     }
   }
 }
@@ -208,6 +218,11 @@ nav {
         width: auto;
         margin: auto .5em;
 
+          a {
+            
+            font-size: 1rem;
+            text-align: center;
+          }
         
       }
     }
@@ -217,7 +232,13 @@ nav {
 
 
 
-
+@media (min-width: 800px) {
+  .hero {
+    max-width: 60%;
+    margin: auto;
+    flex-direction: row;
+  }
+}
 
 
 

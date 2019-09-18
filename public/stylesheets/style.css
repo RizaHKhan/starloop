@@ -107,6 +107,7 @@ nav .nav-menu ul li {
 }
 
 nav .nav-menu ul li a {
+  color: #3E5272;
   width: 100%;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -114,6 +115,10 @@ nav .nav-menu ul li a {
 
 nav .nav-menu ul li a:hover {
   opacity: .8;
+}
+
+nav .nav-menu ul li .signup-button {
+  color: #fff;
 }
 
 .hero {
@@ -201,6 +206,21 @@ nav .nav-menu ul li a:hover {
   nav .nav-menu .nav-ul li {
     width: auto;
     margin: auto .5em;
+  }
+  nav .nav-menu .nav-ul li a {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero {
+    max-width: 60%;
+    margin: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
