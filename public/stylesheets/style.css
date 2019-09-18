@@ -80,6 +80,12 @@ nav .logo img {
   max-width: 150px;
 }
 
+@media (min-width: 800px) {
+  nav .hamburger {
+    display: none;
+  }
+}
+
 nav .nav-menu ul {
   background: #FEFEFE;
   border-top: solid 3px #2EA3F2;
@@ -160,6 +166,42 @@ nav .nav-menu ul li a:hover {
 .hero .bottom .signup-button {
   width: auto;
   margin: auto;
+}
+
+@media (min-width: 800px) {
+  nav {
+    width: 95%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  nav .nav-menu .nav-ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: none;
+    top: 0;
+    padding: 0;
+    margin: 0;
+  }
+  nav .nav-menu .nav-ul li {
+    width: auto;
+    margin: auto .5em;
+  }
 }
 
 .delete {
