@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+  background: #F6F6F6;
 }
 
 .signup-button {
@@ -20,6 +21,7 @@ body {
   text-decoration: none;
   border-radius: 50px;
   text-align: center;
+  max-width: 200px;
 }
 
 .quote {
@@ -96,6 +98,7 @@ nav .nav-menu ul {
   padding: 1.5em 4em;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  background: #F6F6F6;
 }
 
 nav .nav-menu ul li {
@@ -130,6 +133,7 @@ nav .nav-menu ul li .signup-button {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2em;
+  width: 100%;
 }
 
 .hero .top {
@@ -139,7 +143,7 @@ nav .nav-menu ul li .signup-button {
 }
 
 .hero .top img {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -169,8 +173,9 @@ nav .nav-menu ul li .signup-button {
 }
 
 .hero .bottom .signup-button {
-  width: auto;
-  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (min-width: 800px) {
@@ -213,14 +218,34 @@ nav .nav-menu ul li .signup-button {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .hero {
-    max-width: 60%;
-    margin: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    max-width: 60%;
+    margin: auto;
+  }
+  .hero .top {
+    width: 40%;
+  }
+  .hero .bottom {
+    width: 60%;
+    margin: 10% auto;
+  }
+  .hero .bottom .quote {
+    text-align: start;
+  }
+  .hero .bottom .quote-author {
+    text-align: start;
+  }
+  .hero .bottom .hero-cta {
+    text-align: start;
+  }
+  .hero .bottom .signup-button {
+    -ms-flex-item-align: start !important;
+        align-self: flex-start !important;
   }
 }
 

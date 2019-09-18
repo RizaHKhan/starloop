@@ -12,6 +12,7 @@ $MenuColor: #6D6D6D;
 
 body {
   font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+  background: #F6F6F6;
 }
 
 //typology
@@ -27,6 +28,8 @@ body {
   text-decoration: none;
   border-radius: 50px;
   text-align: center;
+  max-width: 200px;
+
 }
 
 .quote {
@@ -110,25 +113,19 @@ nav {
       width: 100%;
       padding: 1.5em 4em;
       transition: all .5s ease-in-out;
-
+      background: #F6F6F6;
       li {
         display: flex;
         width: 100%;
-        
         margin: 2em 0;
-        
 
-        
          a {
           color: #3E5272;
           width: 100%;
           transition: all .3s ease-in-out;
 
-          
-
           &:hover {
-            opacity: .8;
-            
+            opacity: .8;  
           }
          }
 
@@ -138,20 +135,19 @@ nav {
       }
     }
   }
-
-
 }
-
 
 .hero {
   display: flex;
   flex-direction: column;
   padding: 2em;
-
+  width: 100%;
+  
   .top {
     display: flex;
+  
     img {
-      width: 90%;
+      width: 100%;
       margin: auto;
     }
   }
@@ -176,8 +172,8 @@ nav {
     }
 
     .signup-button {
-      width: auto;
-      margin: auto;
+      align-self: center;
+      
       
     }
   }
@@ -193,11 +189,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
 
-    .logo {
-    
-    }
-
-  .nav-menu {
+   .nav-menu {
     
     display: flex;  
     flex-direction: row;
@@ -230,24 +222,53 @@ nav {
 }
 }
 
-
-
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .hero {
+    flex-direction: row;    
     max-width: 60%;
     margin: auto;
-    flex-direction: row;
+
+    
+   .top {
+        width: 40%;
+        img {
+          
+        }
+      
+    }
+
+    .bottom {
+        
+        width: 60%;
+        margin: 10% auto;
+
+      .quote {
+        text-align: start;
+        
+      }
+  
+      .quote-author {
+        text-align: start;
+        
+      }
+  
+      .hero-cta {
+        text-align: start;
+        
+      }
+  
+      .signup-button {
+        align-self: flex-start !important;
+        
+      }
+  
+    }
   }
+
+
+ 
+
 }
-
-
-
-
-
-
-
-
-
 
 
 
